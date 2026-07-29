@@ -347,6 +347,14 @@ const dataArtikel = [
     isi: "Karawang — Mahasiswa Kuliah Kerja Nyata (KKN) Universitas Singaperbangsa Karawang (UNSIKA) Kelompok 78 turun ke Desa Tambaksumur, Kecamatan Tirtajaya, Kabupaten Karawang, untuk mengolah limbah sekam padi menjadi briket bernilai ekonomi tinggi bernama \"Sekambriq\". Desa Tambaksumur yang dikenal sebagai salah satu sentra pertanian padi melimpah di Karawang menghasilkan limbah sekam dalam jumlah besar pasca panen. Program yang berjalan di bawah bimbingan Dosen Pembimbing Lapangan (DPL) Sinta Rosalina, S.S., M.Pd. ini mengedukasi warga melalui 6 tahapan: pengumpulan sekam dari penggilingan warga, pembakaran karbonisasi menjadi arang, penyaringan arang, pencampuran perekat, pencetakan briket, dan penjemuran matahari hingga siap dipasarkan sebagai energi bersih alternatif.",
   },
   {
+    judul: "KKNT Inovasi IPB Ubah Limbah Rumah Tangga Jadi Produk Bernilai Guna Melalui Pembuatan Ecoenzyme di Desa Tambaksumur",
+    tanggal: "29 Juli 2026",
+    kategori: "Inovasi Lingkungan",
+    gambar: "asset/galeri_warga/IMG-20260722-WA0042.jpg",
+    url: "",
+    isi: "Karawang — Tim KARAWANGKAB06 KKNT Inovasi IPB University yang beranggotakan Muhammad Naufal Haidar Aidin, Kayla Kallista, Ayesha Ghaida Munawwara Syihab, Muhammad Rifqi Kaizar, Putri Ayu Aziizah, Auresyifa Ahysta Putri Margono, dan Akbar Maulana menyelenggarakan sosialisasi dan praktik pembuatan Ecoenzyme bersama ibu-ibu rumah tangga di Desa Tambaksumur, Karawang. Ecoenzyme merupakan cairan hasil fermentasi limbah organik seperti kulit buah dan sayuran yang dicampur molase dan air untuk menghasilkan pembersih alami ramah lingkungan. Kegiatan ini melatih partisipasi warga secara langsung dalam mengurangi volume sampah domestik, membangun budaya pengelolaan sampah secara sederhana, ekonomis, serta mendukung keberlanjutan ekosistem lingkungan desa.",
+  },
+  {
     judul: "Optimalisasi Sektor Tambak Pesisir & Pengolahan Udang Hasil Budidaya Warga Tambaksumur",
     tanggal: "25 Juli 2026",
     kategori: "Ekonomi Pesisir",
