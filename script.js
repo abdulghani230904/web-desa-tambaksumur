@@ -336,21 +336,23 @@ function setHeroSlide(index) {
   if (dots[currentHeroSlide]) dots[currentHeroSlide].classList.add("active");
 }
 
-// DATA ARTIKEL DESA (2 DATA UNGGULAN)
+// DATA ARTIKEL DESA (2 DATA UNGGULAN DARI KOMPASIANA & LAPANGAN)
 const dataArtikel = [
   {
-    judul: "Optimalisasi Sistem Irigasi Tersier di Blok Sawah Teratai",
-    tanggal: "20 Juli 2026",
-    kategori: "Pertanian",
-    gambar: "asset/Foto Sawah.jpg",
-    isi: "Pemdes Tambaksumur bersama Dinas Pertanian Karawang melakukan perbaikan penuh pada saluran irigasi tersier di kawasan Blok Teratai guna menjamin pasokan air sawah tetap terjaga.",
+    judul: "Dari Limbah Jadi Cuan: KKN UNSIKA 78 Ajak Warga Tambaksumur Bikin Briket Sekam Padi \"Sekambriq\"",
+    tanggal: "27 Juli 2026",
+    kategori: "Inovasi Desa",
+    gambar: "asset/galeri_warga/galeri6_web.jpg",
+    url: "https://www.kompasiana.com/kkntambaksumur20264762/6a670c9dc925c45614721812/pembuatan-dan-sosialisasi-sekambriq-untuk-mendukung-energi-bersih-di-desa-tambaksumur",
+    isi: "Karawang — Mahasiswa Kuliah Kerja Nyata (KKN) Universitas Singaperbangsa Karawang (UNSIKA) Kelompok 78 turun ke Desa Tambaksumur, Kecamatan Tirtajaya, Kabupaten Karawang, untuk mengolah limbah sekam padi menjadi briket bernilai ekonomi tinggi bernama \"Sekambriq\". Desa Tambaksumur yang dikenal sebagai salah satu sentra pertanian padi melimpah di Karawang menghasilkan limbah sekam dalam jumlah besar pasca panen. Program yang berjalan di bawah bimbingan Dosen Pembimbing Lapangan (DPL) Sinta Rosalina, S.S., M.Pd. ini mengedukasi warga melalui 6 tahapan: pengumpulan sekam dari penggilingan warga, pembakaran karbonisasi menjadi arang, penyaringan arang, pencampuran perekat, pencetakan briket, dan penjemuran matahari hingga siap dipasarkan sebagai energi bersih alternatif.",
   },
   {
-    judul: "Peningkatan Pelayanan Publik & Sarana Gedung Kantor Desa",
-    tanggal: "18 Juli 2026",
-    kategori: "Pemerintahan",
-    gambar: "asset/Foto depan Kantor Desa.jpg",
-    isi: "Pemerintah Desa Tambaksumur terus membenahi kualitas sarana prasarana serta mengintegrasikan sistem layanan administrasi digital demi kenyamanan seluruh warga.",
+    judul: "Optimalisasi Sektor Tambak Pesisir & Pengolahan Udang Hasil Budidaya Warga Tambaksumur",
+    tanggal: "25 Juli 2026",
+    kategori: "Ekonomi Pesisir",
+    gambar: "asset/galeri_warga/IMG_3890.JPG",
+    url: "",
+    isi: "Kawasan pesisir Desa Tambaksumur memiliki potensi tambak payau seluas 70 hektar yang menjadi sumber penghidupan utama masyarakat pesisir. Sinergi antara pemerintah desa dan kelompok petambak terus memperkuat rantai pasok budidaya udang vaname dan bandeng. Aktivitas kelompok warga dalam proses sortasi dan pengolahan udang hasil tambak tidak hanya meningkatkan nilai jual produk kelautan Karawang, tetapi juga berhasil membuka lapangan kerja baru dan mendorong kemandirian ekonomi masyarakat setempat.",
   },
 ];
 
@@ -513,6 +515,17 @@ function openArtikelModal(index) {
   document.getElementById("art-modal-category").innerText = artikel.kategori;
   document.getElementById("art-modal-img").src = artikel.gambar;
   document.getElementById("art-modal-content").innerText = artikel.isi;
+
+  const sourceWrapper = document.getElementById("art-modal-source-wrapper");
+  const sourceLink = document.getElementById("art-modal-source-link");
+  if (sourceWrapper && sourceLink) {
+    if (artikel.url && artikel.url.trim() !== "") {
+      sourceLink.href = artikel.url;
+      sourceWrapper.style.display = "block";
+    } else {
+      sourceWrapper.style.display = "none";
+    }
+  }
 
   const currentUrl = window.location.href;
   document.getElementById("btn-share-wa").onclick = () => {
