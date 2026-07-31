@@ -349,6 +349,93 @@ body.dark-theme .footer-advanced {
     font-weight: 700;
 }
 
+/* SYSTEM DROPDOWN NAVBAR ULTRA-PREMIUM */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    user-select: none;
+}
+
+.caret-icon {
+    font-size: 10px;
+    margin-left: 4px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.nav-dropdown:hover .caret-icon,
+.nav-dropdown.open .caret-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 210px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 8px 0;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1050;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown.open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 10px 18px !important;
+    color: var(--primary-earth) !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease !important;
+    white-space: nowrap !important;
+}
+
+.dropdown-item:hover {
+    background: rgba(76, 175, 80, 0.1) !important;
+    color: var(--padi-fresh) !important;
+    padding-left: 22px !important;
+}
+
+/* DARK THEME DROPDOWN */
+body.dark-theme .dropdown-menu {
+    background: #18381b;
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+body.dark-theme .dropdown-item {
+    color: #e2e8f0 !important;
+}
+
+body.dark-theme .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+}
+
 .btn-nav-cta {
     background: linear-gradient(135deg, var(--primary-earth) 0%, #122814 100%) !important;
     color: #fff !important;
@@ -1561,6 +1648,65 @@ body.dark-theme .layanan-syarat-body h4 {
 
 .contact-info-list strong {
     color: #ffffff;
+}
+
+/* ULTRA-PREMIUM FOOTER WHATSAPP CARD */
+.footer-wa-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.footer-wa-card:hover {
+    background: rgba(37, 211, 102, 0.15);
+    border-color: #25d366;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.25);
+}
+
+.wa-card-icon-badge {
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    background: rgba(37, 211, 102, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.wa-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.wa-card-title {
+    font-size: 12px;
+    color: #94a3b8;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.wa-card-number {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.footer-wa-card:hover .wa-card-number {
+    color: #25d366;
 }
 
 

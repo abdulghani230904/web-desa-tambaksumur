@@ -128,13 +128,31 @@
                     </div>
                 </li>
                 <li><a href="#home" class="nav-item active"><span class="nav-icon-sm">🏠</span> Beranda</a></li>
-                <li><a href="#perangkat" class="nav-item"><span class="nav-icon-sm">👥</span> Perangkat Desa</a></li>
-                <li><a href="#layanan" class="nav-item"><span class="nav-icon-sm">📜</span> Layanan Surat</a></li>
-                <li><a href="#demografi" class="nav-item"><span class="nav-icon-sm">📊</span> Data Kependudukan</a></li>
-                <li><a href="#potensi" class="nav-item"><span class="nav-icon-sm">🌾</span> Hasil Bumi</a></li>
-                <li><a href="#artikel" class="nav-item"><span class="nav-icon-sm">📰</span> Artikel Desa</a></li>
-                <li><a href="#kegiatan" class="nav-item"><span class="nav-icon-sm">🖼️</span> Galeri Warga</a></li>
-                <li><a href="#maps-location" class="nav-item"><span class="nav-icon-sm">📍</span> Lokasi</a></li>
+
+                <!-- DROPDOWN: PROFIL DESA -->
+                <li class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-item dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-icon-sm">🏛️</span> Profil Desa <span class="caret-icon">▾</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#perangkat" class="dropdown-item"><span class="nav-icon-sm">👥</span> Perangkat Desa</a></li>
+                        <li><a href="#demografi" class="dropdown-item"><span class="nav-icon-sm">📊</span> Data Kependudukan</a></li>
+                        <li><a href="#maps-location" class="dropdown-item"><span class="nav-icon-sm">📍</span> Lokasi Balai Desa</a></li>
+                    </ul>
+                </li>
+
+                <!-- DROPDOWN: LAYANAN & POTENSI -->
+                <li class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-item dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-icon-sm">🌾</span> Layanan & Potensi <span class="caret-icon">▾</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#layanan" class="dropdown-item"><span class="nav-icon-sm">📜</span> Layanan Surat Warga</a></li>
+                        <li><a href="#potensi" class="dropdown-item"><span class="nav-icon-sm">🌾</span> Hasil Bumi & Panen</a></li>
+                        <li><a href="#artikel" class="dropdown-item"><span class="nav-icon-sm">📰</span> Artikel Desa</a></li>
+                        <li><a href="#kegiatan" class="dropdown-item"><span class="nav-icon-sm">🖼️</span> Galeri Warga</a></li>
+                    </ul>
+                </li>
 
                 <li class="dark-mode-item">
                     <button id="dark-mode-toggle" class="btn-dark-mode" aria-label="Toggle Dark Mode">
@@ -778,11 +796,14 @@
                     <span class="status-dot-green"></span>
                     <span>Pelayanan: Senin - Jumat (08:00 - 15:30 WIB)</span>
                 </div>
-                <ul class="contact-info-list">
-                    <li>💬 <strong>WhatsApp Pelayanan (Sekdes):</strong> +62 857-8269-9984</li>
-                </ul>
-
-
+                <a href="https://api.whatsapp.com/send?phone=6285782699984&text=Halo%20Sekdes%20Desa%20Tambaksumur,%20saya%20ingin%20bertanya"
+                    target="_blank" class="footer-wa-card" aria-label="WhatsApp Pelayanan Sekdes">
+                    <div class="wa-card-icon-badge">💬</div>
+                    <div class="wa-card-details">
+                        <span class="wa-card-title">WhatsApp Pelayanan (Sekdes)</span>
+                        <span class="wa-card-number">+62 857-8269-9984</span>
+                    </div>
+                </a>
             </div>
         </div>
 

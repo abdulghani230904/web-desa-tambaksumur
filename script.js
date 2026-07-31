@@ -72,6 +72,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // 4.5.1 DROPDOWN MENU INTERACTION FOR TOUCH / CLICK
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const parent = toggle.closest(".nav-dropdown");
+      document.querySelectorAll(".nav-dropdown").forEach((item) => {
+        if (item !== parent) item.classList.remove("open");
+      });
+      if (parent) parent.classList.toggle("open");
+    });
+  });
+
+  const dropdownLinks = document.querySelectorAll(".dropdown-item");
+  dropdownLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      document.querySelectorAll(".nav-dropdown").forEach((item) => item.classList.remove("open"));
+      if (navMenu) navMenu.classList.remove("active");
+      if (hamburgerBtn) {
+        hamburgerBtn.classList.remove("active");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".nav-dropdown")) {
+      document.querySelectorAll(".nav-dropdown").forEach((item) => item.classList.remove("open"));
+    }
+  });
+
   // 4.6 UNIVERSAL SMOOTH SCROLL DENGAN OFFSET NAVBAR PRESI
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
   anchorLinks.forEach((anchor) => {
