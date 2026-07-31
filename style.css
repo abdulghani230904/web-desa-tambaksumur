@@ -320,19 +320,21 @@ body.dark-theme .footer-advanced {
     display: flex; 
     list-style: none; 
     align-items: center; 
-    gap: 12px; 
+    gap: 6px; 
+    flex-wrap: nowrap;
 }
 
 .nav-links a { 
     text-decoration: none; 
     color: var(--primary-earth); 
     font-weight: 600; 
-    font-size: 13.5px; 
-    padding: 7px 14px;
+    font-size: 13px; 
+    padding: 6px 10px;
     border-radius: 20px;
     transition: all 0.25s ease;
     display: inline-flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .nav-links a:hover { 

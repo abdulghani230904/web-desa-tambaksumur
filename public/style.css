@@ -272,6 +272,32 @@ body.dark-theme .footer-advanced {
     filter: drop-shadow(0 2px 4px rgba(76, 175, 80, 0.3));
 }
 
+.navbar-logo-img {
+    height: 42px;
+    width: auto;
+    max-width: 50px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .navbar-logo-img {
+    transform: scale(1.08);
+}
+
+.drawer-logo-img {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.2));
+}
+
 .logo .title { 
     color: var(--primary-earth); 
     font-weight: 800; 
@@ -294,19 +320,21 @@ body.dark-theme .footer-advanced {
     display: flex; 
     list-style: none; 
     align-items: center; 
-    gap: 12px; 
+    gap: 6px; 
+    flex-wrap: nowrap;
 }
 
 .nav-links a { 
     text-decoration: none; 
     color: var(--primary-earth); 
     font-weight: 600; 
-    font-size: 13.5px; 
-    padding: 7px 14px;
+    font-size: 13px; 
+    padding: 6px 10px;
     border-radius: 20px;
     transition: all 0.25s ease;
     display: inline-flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .nav-links a:hover { 
